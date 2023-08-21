@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>AVALIE A SUA MENTORIA</h1>
+            <p>Chegou na hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="assets/img.svg" alt="" srcset="">
+        </header>
+
+        <div class="legend">INFORMAÇÕES PESSOAIS</div>
+
+        <form id="form" action="" method="post">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="name-wrapper">
+                        <div class="input-wrapper">
+                            <label for="name-input">Name</label>
+                            <input required maxlenght="500" type="text" name="name-input" id="name-input">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="name-input">Sobrenome</label>
+                            <input required maxlenght="500" type="text" name="name-input" id="name-input">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email-input">E-mail <span>(digite um email válida)</span></label>
+                        <input required maxlenght="500" type="email" name="email-input" id="email-input">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                    <div class="input-wrapper">
+                        <label for="mentor-input">Selecione quem foi o seu mentor</label>
+                        <input required maxlenght="500" type="text" name="mentor-input" id="mentor-input">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="info-input">Selecione quem foi o seu mentor</label>
+                        <textarea required maxlenght="500" name="info-input" id="info-input" maxlength="1000"></textarea>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input required maxlenght="500" type="checkbox" name="checkbox-input" id="checkbox-input">
+                        <label for="checkbox-input">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+                    <div class="datetime">
+                        <div class="input-wrapper">
+                            <label for="date-input">Data <span>(DD/MM/AAAA)</span></label>
+                            <input required maxlenght="500" type="date" name="date-input" id="date-input">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="time-input">Início</label>
+                            <input required maxlenght="500" type="time" name="time-input" id="time-input">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="time-input">Término</label>
+                            <input required maxlength="500" type="time" name="time-input" id="time-input">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <input id="submit" type="submit" value="SALVAR">
+        </form>
+    </div>
+</body>
+</html>
